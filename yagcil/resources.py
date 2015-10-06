@@ -15,6 +15,7 @@ from yagcil.helpers import queryset_to_dict
 
 
 class OrganizationListResource(restful.Resource):
+
     """Get a list of all organizations"""
 
     def __init__(self):
@@ -38,6 +39,7 @@ class OrganizationListResource(restful.Resource):
 
 
 class AllOrganizationListResource(restful.Resource):
+
     """Get a list of all organizations for every year"""
 
     def get(self):
@@ -56,6 +58,7 @@ class AllOrganizationListResource(restful.Resource):
 
 
 class OrganizationResource(restful.Resource):
+
     """Get organization data"""
 
     @staticmethod
@@ -75,6 +78,7 @@ class OrganizationResource(restful.Resource):
 
 
 class OrganizationRankResource(restful.Resource):
+
     """Get rank for organization/all orgs"""
 
     @staticmethod
@@ -109,6 +113,7 @@ class OrganizationRankResource(restful.Resource):
 
 
 class OrganizationStatsResource(restful.Resource):
+
     """Return organization statistics"""
 
     @staticmethod
@@ -126,6 +131,7 @@ class OrganizationStatsResource(restful.Resource):
 
 
 class TaskListResource(restful.Resource):
+
     """Get a list of all organizations"""
 
     def __init__(self):
@@ -189,6 +195,7 @@ class TaskListResource(restful.Resource):
 
 
 class TaskResource(restful.Resource):
+
     """Get task's data"""
 
     @staticmethod
@@ -207,6 +214,7 @@ class TaskResource(restful.Resource):
 
 
 class StudentResource(restful.Resource):
+
     """Return student's stats"""
 
     @staticmethod
@@ -234,6 +242,7 @@ class StudentResource(restful.Resource):
 
 
 class RootResource(restful.Resource):
+
     """Return links to all entry points"""
 
     list_type_regex = {
@@ -317,6 +326,7 @@ class RootResource(restful.Resource):
 
 
 class ConfigResource(restful.Resource):
+
     """Get yagcil config"""
 
     @staticmethod

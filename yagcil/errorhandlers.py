@@ -5,6 +5,7 @@ from enum import IntEnum
 
 
 class ErrorCode(IntEnum):
+
     """API Server error codes"""
     UndefinedError = -1
     # ResourceNotFound
@@ -13,6 +14,7 @@ class ErrorCode(IntEnum):
 
 
 class AbstractError(Exception):
+
     """An abstract API error class"""
 
     def __init__(self, message, error_code=ErrorCode.UndefinedError,

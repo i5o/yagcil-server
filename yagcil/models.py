@@ -6,6 +6,7 @@ import mongoengine as me
 
 
 class Organization(me.Document):
+
     """Organization model
 
     :var name Short name of the organization, e.g., brlcad, sugarlabs
@@ -30,6 +31,7 @@ class Organization(me.Document):
 
 
 class Task(me.Document):
+
     """Task model
 
     :var key An unique task's id (in Melange database)

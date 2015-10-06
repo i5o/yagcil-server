@@ -12,6 +12,7 @@ TEST_DB_NAME = 'yagcil-test'
 
 
 class YagcilTestCase(unittest.TestCase):
+
     def __setupDatabase(self):
         """Connect to the testing database and add some entries"""
         self.db = me.connect(TEST_DB_NAME)
