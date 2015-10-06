@@ -33,6 +33,3 @@ def handle_api_error(error):
     response.status_code = error.status_code
 
     return response
-
-
-import yagcil.resources
